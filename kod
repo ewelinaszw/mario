@@ -279,10 +279,14 @@ def game_loop():
                     elif event.key == pygame.K_DOWN:
                         mario.down = True
                         mario.up = False
-            if blink.value==1:
-                mario.down = False
-                mario.up = True
-                blink.value=0
+           if blink.value==1:
+				    print('blink')
+				    mario.up = True
+				    mario.down = False
+				    blink.value=0
+           else:
+			    mario.down = True
+				mario.up = False
 
             score_font = font.render('Score:'+str(SCORE), True, GREEN)
             score_font_rect = score_font.get_rect()
