@@ -162,7 +162,7 @@ class Mario:
             if SCORE > self.mario_score:
                 self.mario_score = SCORE
         if self.up:
-            self.mario_img_rect.top -= 15
+            self.mario_img_rect.top -= 70
         if self.down:
             self.mario_img_rect.bottom += 5
 
